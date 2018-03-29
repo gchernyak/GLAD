@@ -11,6 +11,11 @@ The basic functionality provided here is to either enter the source URL of a Swa
 
 In addition an Apiary destination URL must be provided with a valid authentication token in the header. The Documenation to obtain the token can be found here https://help.apiary.io/api_101/authentication/
 
+The code then takes the input Swagger or YAML and converts it to Markdown and updates an Apiary API document via the Apiary API interface.
+
+### Suggested Usage
+In my opinion the best way to use this is to have this wrapped in an API call and make the call as a post build action. In this way the documentation is updated upon each successful build.
+
 Please feel free to leave any feedback or improvement suggestions.
 
 Note: The YAML portion will require the YamlDotNet package.
